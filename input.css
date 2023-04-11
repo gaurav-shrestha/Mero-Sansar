@@ -14,6 +14,39 @@
     }
 } */
 
+@layer base {
+    h3 {
+        @apply max-w-lg font-sans uppercase text-center text-4xl md:text-5xl;
+    }
+    h5 {
+        @apply w-52 absolute text-white bottom-4 px-6 group-hover:text-black duration-300 group-hover:scale-110 md:bottom-8 md:px-10;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply border-2 border-black px-8 py-2 uppercase font-bold text-base tracking-widest font-alata hover:bg-black hover:text-white;
+    }
+}
+
+@layer utilities {
+    .menu-effect {
+        @apply mx-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100;
+    }
+}
+
+.item-container {
+    @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item-gradient {
+    @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+.section-container {
+    @apply max-w-6xl mx-auto px-5;
+}
+
 #hero {
     background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
